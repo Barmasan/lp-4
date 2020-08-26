@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@700&display=swap');
+
+
+
+/* utilities */
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1, h2, a, button{
+    font-family: 'Rubik', sans-serif;
+}
+@media (max-width: 576px){
+
+}
+/* utilities END */
+
+
+/* bootstrap rewrite */
+.c-btn{
+    background-color: green;
+    border: 0;
+    border-radius: 0;
+}
+
+@media (max-width: 576px){
+
+}
+/* bootstrap rewrite END */
+
+
+/* header */
+
+
+@media (max-width: 576px){
+    
+}
+/* header END */
+
+
+/* jumbotron */
+.first-screen{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    color: white;
+}
+.first-screen__text{
+    width: 50%;
+}
+.first-screen__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+    line-height: 70px;
+}
+.first-screen__title_highlighted {
+    font-size: 80px;
+    color: green;
+}
+.first-screen__promocode{
+    width: 50%;
+}
+
+@media (max-width: 576px){
+
+    .first-screen__text{
+        width: 100%;
+    }
+    .first-screen__title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .first-screen__title_highlighted {
+        font-size: 60px;
+        color: green;
+    }
+    .first-screen__promocode{
+        width: 100%;
+    }
+}
+/* jumbotron END */
+
+
+/* text-block */
+
+.text-block {
+
+}
+.text-block h2{
+    font-size: 40px;
+}
+.text-block__wrapper {
+    background-color: gray;
+    padding: 40px;
+}
+.text-block__text{
+    font-size: 18px;
+}
+.text-block__image {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.text-block__button {
+    margin: 0 0 20px 0;
+
+}
+.text-block__apps {
+}
+
+
+@media (max-width: 576px){
+    .text-block h2{
+        font-size: 30px;
+    }
+    .text-block__wrapper {
+        padding: 20px;
+    }
+}
+/* text-block END */
+
+
+/* app-dowload */
+
+
+@media (max-width: 576px){
+    
+}
+/* app-dowload END */
+
+
+/* promocode */
+.promocode {
+    height: 200px;
+    background-color: red;
+}
+.code {
+    height: 70%;
+    background-color: #fff;
+}
+.buttons {
+    height: 30%;
+    width: 100%;
+}
+.buttons a{
+    height: 100%;
+    width: 50%;
+}
+.buttons button{
+    height: 100%;
+    width: 50%;
+}
+
+/* promocode END */
+
