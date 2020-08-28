@@ -32,6 +32,18 @@ h1, h2, a, button{
     color: #FFC500;
     background-color: #fff;
 }
+.c-btn-inv{
+    border: 0;
+    border-radius: 0;
+
+    color: #FFC500;
+    background-color: #fff;
+}
+.c-btn-inv:hover{
+
+    background-color: #FFC500;
+    color: #fff;
+}
 
 @media (max-width: 576px){
 
@@ -143,11 +155,34 @@ header{
     width: 100%;
     margin: 0 0 20px 0;
 }
+.text-block__image:last-child{
+    margin: 0;
+}
 .text-block__button {
     margin: 0 0 20px 0;
 
 }
 .text-block__apps {
+}
+
+.text-block__header {
+    width: 100%;
+    background-color: #FFC500;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 50px;
+}
+.text-block__index {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin: 0 50px 0 0;
+}
+
+
+.text-block__header-text {
+    color: white;
+    font-size: 18px;
 }
 
 
@@ -157,6 +192,11 @@ header{
     }
     .text-block__wrapper {
         padding: 20px;
+    }
+    .text-block__header {
+        flex-direction: column;
+        padding: 10px;
+        align-items: flex-start;
     }
 }
 /* text-block END */
@@ -242,3 +282,83 @@ header{
 /* payment END */
 
 
+.round-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.round-buttons__button {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round-buttons__button a svg{
+    margin: 0 0 10px 0;
+    color: #FFC500;
+}
+.round-buttons__button a{
+    width: 180px;
+    height: 180px;
+    border: 2px solid #FFC500;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.round-buttons__button a:hover{
+    text-decoration: none;
+    border: 2px solid #00A9FD;
+
+}
+.round-buttons__button a:hover svg{
+    color: #00A9FD;
+}
+.round-buttons__title{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    width: 150px;
+}
+
+.circle{
+    counter-reset: list-counter;
+    list-style: none;
+}
+.circle li{
+    margin: 1.5em 0;    
+}
+.circle li:before{
+    box-sizing: unset;
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 1em;
+    height: 1em;
+    padding: .5em;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: .25em solid #ccc;
+    
+    background: #FFC500;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+@media (max-width: 576px){
+    .circle{
+        padding: 0;
+    }
+}
